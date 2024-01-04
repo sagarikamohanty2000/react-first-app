@@ -1,16 +1,12 @@
 
 import "./ExpenseItem.css";
 
-function ExpenseItem()
+function ExpenseItem(data)
 {
-    const expenseItem = "Food";
-    const expenseAmount = "100";
-    const expenseLocation = "Bangalore";
-
     return <div>
-        <h3>Expense Items</h3>
+        
         <ul className="expense-item">
-            <li>{expenseItem}{"  "}{expenseAmount}{"  "}{expenseLocation}</li>
+            <li>{data.name}{"  "}{data.amount}{"  "}{data.location}</li>
         </ul>
     </div>
 }

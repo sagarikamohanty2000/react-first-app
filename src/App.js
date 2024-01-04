@@ -3,6 +3,26 @@ import './App.css';
 import ExpenseItem  from './components/ExpenseItem';
 
 function App() {
+
+  const expense = [
+    {
+      title:'Car',
+      amount:10000,
+      location:'Kolkata',
+    },
+
+    {
+      title:'Pen',
+      amount:20,
+      location:'Kolkata',
+    },
+
+    {
+      title:'laptop',
+      amount: 50000,
+      location:'Bangalore'
+    }
+  ]
   return (
     <div className="App">
       <header className="App-header">
@@ -18,7 +38,14 @@ function App() {
         >
           Learn React
         </a>
-     <ExpenseItem></ExpenseItem>
+        <h3>Expense Items</h3>
+
+         <ExpenseItem name={expense[0].name} amount={expense[0].amount} location={expense[0].location}></ExpenseItem>
+         
+         <ExpenseItem name={expense[1].name} amount={expense[1].amount} location={expense[1].location}></ExpenseItem>
+         
+         <ExpenseItem name={expense[2].name} amount={expense[2].amount} location={expense[2].location}></ExpenseItem>
+        
       </header>
     </div>
   );
