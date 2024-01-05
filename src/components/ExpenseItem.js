@@ -1,12 +1,13 @@
 
 import "./ExpenseItem.css";
+import ExpenseDate from "./ExpenseDate";
 
 function ExpenseItem(data)
-{
+{   
     return <div>
         
         <ul className="expense-item">
-            <li>{data.name}{"  "}{data.amount}{"  "}{data.location}</li>
+            <li><ExpenseDate date={data.date}/>{data.name}{"                "}{data.amount}{"              "}{data.location}</li>
         </ul>
     </div>
 }
