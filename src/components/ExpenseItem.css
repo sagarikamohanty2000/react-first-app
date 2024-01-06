@@ -1,5 +1,18 @@
+
 .expense-item {
-  color: aqua;
+  color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: bold;
+  font-weight:300;
+  margin-left: 10px;
+  border-radius: 50px;
+  background-color:whitesmoke;
+  box-shadow: 0 1px 8px (0, 0, 0, 0.25);
+  margin-top: 30px;
 }
+/* .expense-date {
+  border-radius: 6px;
+  width: 400px;
+  margin-left: 80px;
+  background-color:whitesmoke;
+  box-shadow: 0 1px 8px (0, 0, 0, 0.25);
+} */

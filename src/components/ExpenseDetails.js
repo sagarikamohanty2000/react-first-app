@@ -1,13 +1,8 @@
 
-
 function ExpenseDetails(data) {
   return (
     <div>
-      {data.name}
-      {"                "}
-      {data.amount}
-      {"              "}
-      {data.location}
+      <div>{data.name}{"   "}{" "}{data.amount}{" "}{" "}{data.location}</div>
     </div>
   );
 }
