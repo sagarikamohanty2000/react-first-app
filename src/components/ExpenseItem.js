@@ -5,16 +5,14 @@ import ExpenseDetails from "./ExpenseDetails";
 function ExpenseItem(data) {
   return (
     <div>
-      <ul className="expense-item">
-        <li>
-          <ExpenseDate date={data.date} />{" "}
+    <div className="expense-item">
+          <ExpenseDate date={data.date}/>
           <ExpenseDetails
             name={data.name}
             amount={data.amount}
             location={data.location}
           />
-        </li>
-      </ul>
+    </div>
     </div>
   );
 }
