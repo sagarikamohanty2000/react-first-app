@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import ExpenseForm from "./components/Expenses/ExpenseForm";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
 
 
@@ -28,7 +29,10 @@ const App = () => {
     },
   ];
   return (
+
     <div className="App">
+
+      <ExpenseForm></ExpenseForm>
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
