@@ -1,4 +1,5 @@
 .expense_Date {
   color: black;
-  font-weight: bold;
+  font-weight:100;
+  text-align: left;
 }

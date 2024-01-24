@@ -7,21 +7,21 @@ import Card from "./components/UI/Card";
 const App = () => {
   const expense = [
     {
-      title: "Car",
+      name: "Car",
       amount: 10000,
       location: "Kolkata",
       date: new Date(2021, 2, 28),
     },
 
     {
-      title: "Pen",
+      name: "Pen",
       amount: 20,
       location: "Kolkata",
       date: new Date(2021, 2, 28),
     },
 
     {
-      title: "laptop",
+      name: "laptop",
       amount: 50000,
       location: "Bangalore",
       date: new Date(2021, 2, 28),

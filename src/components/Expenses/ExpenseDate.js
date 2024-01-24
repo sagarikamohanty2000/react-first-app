@@ -7,11 +7,7 @@ const ExpenseDate = (data) => {
 
   return (
     <div>
-      <div>
         {day} {month} {year}
-      </div>
-      <div></div>
-      <div></div>
     </div>
   );
 }
