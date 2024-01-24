@@ -1,10 +1,12 @@
 import "./ExpenseItem.css";
 
 import ExpenseDetails from "./ExpenseDetails";
+import Card from "../UI/Card";
 
 const ExpenseItem = (data) => {
   return (
-    <div className="expense-item">
+
+    <Card className="expense-item">
           
           <ExpenseDetails
             date={data.date}
@@ -12,7 +14,7 @@ const ExpenseItem = (data) => {
             amount={data.amount}
             location={data.location}
           />
-    </div>
+    </Card>
   );
 }
 
