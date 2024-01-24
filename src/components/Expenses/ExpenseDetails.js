@@ -9,7 +9,7 @@ const ExpenseDetails = (data) => {
       {data.name}
        {data.amount}
       {data.location}
-      <button>Change Title</button></li>
+      </li>
       </ul>
     </div>
   );
