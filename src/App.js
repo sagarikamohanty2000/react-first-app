@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
-import Card from "./components/UI/Card";
+
 
 
 const App = () => {
@@ -42,9 +42,10 @@ const App = () => {
         >
           Learn React
         </a> */}
-        <Card className="card">
+        
         <h3>Expense Items</h3>
-
+     </header>
+     <div className="boxContainer">
         <ExpenseItem
           date={expense[0].date}
           name={expense[0].name}
@@ -65,9 +66,8 @@ const App = () => {
           amount={expense[2].amount}
           location={expense[2].location}
         ></ExpenseItem>
-        </Card>
-      </header>
     </div>
+  </div>  
   );
 }
 

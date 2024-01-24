@@ -1,13 +1,9 @@
-.Para{
+.para{
     display:inline;
 }
 
-.date_data{
-    /*margin-left: 2px;*/
-    text-align: left;
-}
-.name_data{
-    
+.data_name{
+    display: inline;
 }
 .amount_data{
     
