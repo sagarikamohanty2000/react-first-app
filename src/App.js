@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExpenseForm from "./components/Expenses/ExpenseForm";
+import NewExpense from "./components/Expenses/NewExpense";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
 
 
@@ -27,12 +27,19 @@ const App = () => {
       location: "Bangalore",
       date: new Date(2021, 2, 28),
     },
+
   ];
+
+
+  const newExpenseHandler = (newExpenseData) => {
+    console.log("In App.js");
+    console.log(newExpenseData);
+  }
   return (
 
     <div className="App">
+      <NewExpense onFetchingNewExpense = {newExpenseHandler}/>
 
-      <ExpenseForm></ExpenseForm>
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -70,6 +77,11 @@ const App = () => {
           amount={expense[2].amount}
           location={expense[2].location}
         ></ExpenseItem>
+        {/* <ExpenseItem
+          date= {newExpense.date}
+          name={newExpense.name}
+          amount={newExpense.amount}
+        ></ExpenseItem> */}
     </div>
   </div>  
   );
