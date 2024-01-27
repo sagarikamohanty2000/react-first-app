@@ -5,17 +5,19 @@ import Card from "../UI/Card";
 
 const ExpenseItem = (data) => {
   return (
-
-    <Card className="expense-item">
-          
+    <div>
+      {data.items.map((expense) => (
+        <Card className="expense-item"  key={expense.id}>
+         
           <ExpenseDetails
-            date={data.date}
-            name={data.name}
-            amount={data.amount}
-            location={data.location}
+            date={expense.date}
+            name={expense.name}
+            amount={expense.amount}
           />
-    </Card>
+        </Card>
+      ))}
+    </div>
   );
-}
+};
 
 export default ExpenseItem;
