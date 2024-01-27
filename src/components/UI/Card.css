@@ -1,6 +1,6 @@
 .expense-card {
   border-radius: 12px;
-  margin-left: 25px;
+  margin-left: 65px;
   margin-top: 20px;
   padding-top: 30px;
   padding-left: 10px;
@@ -9,5 +9,4 @@
   background-color: white;
   color: orangered;
   font-size: larger;
-  
 }

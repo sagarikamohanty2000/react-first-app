@@ -1,26 +1,20 @@
-
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props) => {
+  const onSaveHandler = (newExpenseData) => {
+    const newData = {
+      ...newExpenseData,
+      id: Math.random(),
+    };
 
-     const onSaveHandler = (newExpenseData) => {
-
-        const newData = {
-            ...newExpenseData,
-            id: Math.random()
-        }
-
-        props.onFetchingNewExpense(newData);
-        //console.log(newData);
-     }
-    return (
-  <div className="new-expense"> 
-  <ExpenseForm  onSaveNewExpense = {onSaveHandler}/>
-  </div>
-    );
-}
+    props.onFetchingNewExpense(newData);
+    //console.log(newData);
+  };
+  return (
+    <div className="new-expense">
+      <ExpenseForm onSaveNewExpense={onSaveHandler} />
+    </div>
+  );
+};
 
 export default NewExpense;
-
-
-

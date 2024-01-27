@@ -43,9 +43,9 @@ const ExpenseForm = (props) => {
       date: new Date(date),
     };
     props.onSaveNewExpense(expenseDetails);
-    setDate('');
-    setName('');
-    setAmount('');
+    setDate("");
+    setName("");
+    setAmount("");
     //console.log(expenseDetails);
   };
   return (
@@ -53,11 +53,26 @@ const ExpenseForm = (props) => {
       <h2>Add Expense</h2>
       <form onSubmit={submitHandler}>
         <label>Date :</label>
-        <input name="date" type="date" value={date} onChange={dateHandler}></input>
+        <input
+          name="date"
+          type="date"
+          value={date}
+          onChange={dateHandler}
+        ></input>
         <label>Expense Name :</label>
-        <input name="name" type="text" value={name}onChange={nameHandler}></input>
+        <input
+          name="name"
+          type="text"
+          value={name}
+          onChange={nameHandler}
+        ></input>
         <label>Amount :</label>
-        <input name="amount" type="number" value={amount} onChange={amountHandler}></input>
+        <input
+          name="amount"
+          type="number"
+          value={amount}
+          onChange={amountHandler}
+        ></input>
         <button type="submit"> Add Expense</button>
       </form>
     </div>
