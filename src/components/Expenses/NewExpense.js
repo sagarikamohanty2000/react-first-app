@@ -9,10 +9,11 @@ const NewExpense = (props) => {
 
     props.onFetchingNewExpense(newData);
     //console.log(newData);
-  };
+     };
+
   return (
     <div className="new-expense">
-      <ExpenseForm onSaveNewExpense={onSaveHandler} />
+      <ExpenseForm addButton = {props.addButton} onSaveNewExpense={onSaveHandler} />
     </div>
   );
 };
