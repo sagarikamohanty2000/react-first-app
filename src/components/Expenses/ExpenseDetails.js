@@ -10,13 +10,13 @@ const ExpenseDetails = (data) => {
     console.log(amount);
   };
   return (
-    <div className="date_data">
+    <li className="date_data">
       <ExpenseDate date={data.date} />
       {data.name}
       {amount}
       {/*{data.location}*/}
       <button onClick={clickHandler}>Change Amount</button>
-    </div>
+    </li>
   );
 };
 
