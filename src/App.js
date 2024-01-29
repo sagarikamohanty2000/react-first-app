@@ -40,7 +40,7 @@ const App = () => {
   };
   return (
     <div className="App">
-      <NewExpense onFetchingNewExpense={newExpenseHandler} />
+      <NewExpense addButton = {true} onFetchingNewExpense={newExpenseHandler} />
 
       <header className="App-header">
         <h3>Expense Items</h3>
