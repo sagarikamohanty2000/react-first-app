@@ -5,7 +5,7 @@ const ExpenseForm = (props) => {
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
 
-  const [button, setAddButton] = useState( props.addButton);
+  const [button, setAddButton] = useState(props.addButton);
   // const [inputs, setInputs] = useState({
   //   name:"",
   //   amount: "",
@@ -14,11 +14,11 @@ const ExpenseForm = (props) => {
 
   const addExpenseHandler = () => {
     setAddButton(false);
-  }
+  };
 
   const cancelExpenseFormHandler = () => {
     setAddButton(true);
-  }
+  };
 
   const amountHandler = (event) => {
     // setInputs((prevState)=> {
@@ -46,7 +46,7 @@ const ExpenseForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-       
+
     const expenseDetails = {
       name: name,
       amount: amount,
@@ -60,15 +60,16 @@ const ExpenseForm = (props) => {
     //console.log(expenseDetails);
   };
 
-  if(button === true)
-  {
+  if (button === true) {
     return (
       <div className="Container">
         <form>
-          <button type="button" onClick={addExpenseHandler}>Add Expense</button>
+          <button type="button" onClick={addExpenseHandler}>
+            Add Expense
+          </button>
         </form>
       </div>
-    )
+    );
   }
   return (
     <div className="Container">
@@ -96,11 +97,12 @@ const ExpenseForm = (props) => {
           onChange={amountHandler}
         ></input>
         <button type="submit"> Add Expense</button>
-        <button type="button" onClick={cancelExpenseFormHandler}>Cancel</button>
+        <button type="button" onClick={cancelExpenseFormHandler}>
+          Cancel
+        </button>
       </form>
     </div>
   );
 };
-
 
 export default ExpenseForm;
