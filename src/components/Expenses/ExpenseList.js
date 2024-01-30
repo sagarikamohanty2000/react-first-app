@@ -9,7 +9,7 @@ const ExpenseList = (props) => {
   return (
     <ul className="expense_list">
       {props.items.map((expense) => (
-        <Card className="expense-item" key={expense.id}>
+        <Card className="expense" key={expense.id}>
           <ExpenseDetails
             date={expense.date}
             name={expense.name}

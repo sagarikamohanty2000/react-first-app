@@ -1,12 +1,14 @@
 .expense-card {
-  border-radius: 12px;
-  margin-left: 65px;
-  margin-top: 20px;
-  padding-top: 30px;
-  padding-left: 10px;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-bottom: 20px;
+  padding-left: 25px;
   width: 860px;
+  display: inline-flex;
   height: 100px;
-  background-color: white;
-  color: orangered;
+  background-color: rgb(203, 187, 187);
   font-size: larger;
+  border: 2px solid whitesmoke;
 }
