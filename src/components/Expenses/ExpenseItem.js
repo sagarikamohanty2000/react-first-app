@@ -41,6 +41,7 @@ const ExpenseItem = (data) => {
       </div>
 
       <ExpenseChart expenses={filterExpense} />
+      <h2 style={{marginLeft: 50}}> Expense List</h2>
       <ExpenseList items={filterExpense}></ExpenseList>
     </div>
   );
