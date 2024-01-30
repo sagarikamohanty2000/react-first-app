@@ -1,0 +1,103 @@
+.button-addExpense {
+  border-radius: 12px;
+  margin-top: 60px;
+  margin-left: 250px;
+  padding-top: 10px;
+  width: 1000px;
+  height: 100px;
+  background-color: rgb(180, 214, 203);
+  box-shadow: 0 1px 8px (0, 0, 0, 0.25);
+}
+
+#btn {
+  margin-left: 410px;
+  width: 200px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 6px;
+  background-color: rgb(128, 128, 249);
+  border: 2px solid white;
+}
+
+.Container {
+  border-radius: 12px;
+  margin-top: 60px;
+  margin-left: 250px;
+  padding-top: 10px;
+  width: 1000px;
+  height: 300px;
+  background-color: rgb(180, 214, 203);
+  box-shadow: 0 1px 8px (0, 0, 0, 0.25);
+}
+
+.form-header {
+  margin-left: 40px;
+  font-size: 17px;
+}
+
+.form-first-line {
+  margin-left: 40px;
+}
+
+.form-second-line {
+  margin-left: 40px;
+}
+#name-label {
+  color: rgb(0, 50, 104);
+  font-size: 25px;
+  font-weight: 400px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#name-input {
+  margin-top: 5px;
+  width: 400px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: rgb(245, 255, 254);
+}
+#amount-label {
+  margin-left: 258px;
+  color: rgb(0, 50, 104);
+  font-size: 25px;
+  font-weight: 400px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#amount-input {
+  margin-top: 5px;
+  margin-left: 15px;
+  width: 400px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: rgb(245, 255, 254);
+}
+#date-label {
+  color: rgb(0, 50, 104);
+  font-size: 25px;
+  font-weight: 400px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#date-input {
+  margin-top: 5px;
+  width: 400px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: rgb(245, 255, 254);
+}
+#addExpenseBtn {
+  margin-left: 460px;
+  width: 200px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 6px;
+  background-color: rgb(128, 128, 249);
+  border: 2px solid white;
+}
+#cancelBtn {
+  margin-left: 10px;
+  width: 200px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 6px;
+  background-color: rgb(128, 128, 249);
+  border: 2px solid white;
+}

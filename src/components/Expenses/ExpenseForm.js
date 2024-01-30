@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
   const [name, setName] = useState("");
@@ -62,9 +63,9 @@ const ExpenseForm = (props) => {
 
   if (button === true) {
     return (
-      <div className="Container">
+      <div className="button-addExpense">
         <form>
-          <button type="button" onClick={addExpenseHandler}>
+          <button type="button" id="btn" onClick={addExpenseHandler}>
             Add Expense
           </button>
         </form>
@@ -73,33 +74,59 @@ const ExpenseForm = (props) => {
   }
   return (
     <div className="Container">
-      <h2>Add Expense</h2>
+      <div className="form-header">
+        <h2>Add Expense</h2>
+      </div>
       <form onSubmit={submitHandler}>
-        <label>Date :</label>
-        <input
-          name="date"
-          type="date"
-          value={date}
-          onChange={dateHandler}
-        ></input>
-        <label>Expense Name :</label>
-        <input
-          name="name"
-          type="text"
-          value={name}
-          onChange={nameHandler}
-        ></input>
-        <label>Amount :</label>
-        <input
-          name="amount"
-          type="number"
-          value={amount}
-          onChange={amountHandler}
-        ></input>
-        <button type="submit"> Add Expense</button>
-        <button type="button" onClick={cancelExpenseFormHandler}>
-          Cancel
-        </button>
+        <div className="form-first-line">
+          <label for="name" id="name-label">
+            Expense Name{" "}
+          </label>
+
+          <label for="amount" id="amount-label">
+            Amount{" "}
+          </label>
+        </div>
+        <div className="form-first-line">
+          <input
+            name="name"
+            type="text"
+            id="name-input"
+            value={name}
+            onChange={nameHandler}
+          ></input>
+          <input
+            name="amount"
+            type="number"
+            id="amount-input"
+            value={amount}
+            onChange={amountHandler}
+          ></input>
+        </div>
+        <div className="form-second-line">
+          <label id="date-label">Date </label>
+        </div>
+        <div className="form-second-line">
+          <input
+            name="date"
+            type="date"
+            id="date-input"
+            value={date}
+            onChange={dateHandler}
+          ></input>
+        </div>
+        <div>
+          <button type="submit" id="addExpenseBtn">
+            Add Expense
+          </button>
+          <button
+            type="button"
+            id="cancelBtn"
+            onClick={cancelExpenseFormHandler}
+          >
+            Cancel
+          </button>
+        </div>
       </form>
     </div>
   );

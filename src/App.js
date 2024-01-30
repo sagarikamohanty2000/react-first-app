@@ -5,27 +5,27 @@ import ExpenseItem from "./components/Expenses/ExpenseItem";
 
 const DummyExpenses = [
   {
-    id: 'e1',
+    id: "e1",
     name: "Car",
-    amount: 10000,
+    amount: 100,
     location: "Kolkata",
-    date: new Date(2021, 2, 28),
+    date: new Date(2020, 2, 28),
   },
 
   {
-    id: 'e2',
+    id: "e2",
     name: "Pen",
-    amount: 20,
+    amount: 342,
     location: "Kolkata",
-    date: new Date(2021, 2, 28),
+    date: new Date(2020, 7, 28),
   },
 
   {
-    id: 'e3',
+    id: "e3",
     name: "laptop",
-    amount: 50000,
+    amount: 500,
     location: "Bangalore",
-    date: new Date(2021, 2, 28),
+    date: new Date(2020, 6, 28),
   },
 ];
 const App = () => {
@@ -40,11 +40,11 @@ const App = () => {
   };
   return (
     <div className="App">
-      <NewExpense addButton = {true} onFetchingNewExpense={newExpenseHandler} />
-
       <header className="App-header">
         <h3>Expense Items</h3>
       </header>
+      <NewExpense addButton={true} onFetchingNewExpense={newExpenseHandler} />
+
       <div className="boxContainer">
         <ExpenseItem items={expenses}></ExpenseItem>{" "}
       </div>

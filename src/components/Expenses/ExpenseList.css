@@ -1,9 +1,10 @@
-.expense_list{
-    list-style: none;
-    padding: 0;
+.expense_list {
+  list-style: none;
+  padding: 0;
 }
 
-.expense_list_fall_back{
-    color: black;
-    text-align: center;
+.expense_list_fall_back {
+  color: black;
+  text-align: center;
+  padding: 50px;
 }

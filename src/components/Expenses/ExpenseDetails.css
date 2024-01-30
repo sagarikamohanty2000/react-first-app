@@ -2,10 +2,51 @@
   display: inline;
 }
 
-.data_name {
-  display: inline;
+.data-details {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 8px;
 }
-.amount_data {
+
+.data-date {
+  border-radius: 30px;
+  margin-bottom: 4px;
+  padding-top: 10px;
+  width: 120px;
+  height: 90px;
+  color: rgb(230, 224, 224);
+  background-color: rgb(75, 74, 74);
+  border: 3px solid black;
 }
-.location_data {
+
+.data-name {
+  margin-left: 20px;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.data-amount {
+  text-align: center;
+  margin-top: 25px;
+  width: 200px;
+  height: 45px;
+  background-color: beige;
+  padding-top: 10px;
+  padding-right: 2px;
+  border-radius: 8px;
+  font-size: larger;
+  right: 365px;
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.data-alignment {
+}
+
+.data-change__btn {
+  margin-left: 100px;
+  margin-top: 40px;
 }
