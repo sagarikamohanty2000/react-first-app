@@ -41,7 +41,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h3>Expense Items</h3>
+        <h3>Expense Tracker</h3>
       </header>
       <NewExpense addButton={true} onFetchingNewExpense={newExpenseHandler} />
 
